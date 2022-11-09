@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+body{
+    font-size: 18px;
+    background-color: hsl(0, 0%, 98%);
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right -270% top -16.5%;        
+}
+.box{
+    width: 100%;         
+    overflow: hidden;
+    position: relative;  
+}
+nav{
+    background-color: white;
+    padding:5% 10% ;
+    position: relative;
+    z-index: 10;
+}
+ul{
+    margin:auto;
+    width: 50%;
+    justify-content: space-between;    
+}
+.nav-link{
+    color: hsl(233, 8%, 62%);    
+}
+.nav-link:hover{
+    color: hsl(233, 26%, 24%);
+    font-weight: 700;
+ 
+    border-bottom:3px solid  hsl(136, 65%, 51%);
+}
+button{
+    background-image: linear-gradient(135deg,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 8px 30px;
+}
+button:hover{
+    opacity: 0.5;
+}
+h1,h2,h4,h5{
+    color: hsl(233, 26%, 24%);
+}
+p{
+   color: hsl(233, 8%, 62%);
+}
+span{
+    color: hsl(233, 8%, 62%);
+    font-size: 12px;
+}
+h1{
+    font-size: 55px;
+    margin-bottom: 5%;
+}
+h2{
+    margin-bottom: 2%;
+}
+h4{
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+h5:hover{
+    cursor: pointer;
+    color: hsl(136, 65%, 51%);
+}
+.mock{
+    position: absolute;
+    z-index: -1;
+    top: -3%;
+    right: -9%;   
+}
+.box-1{
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 12%;
+}
+.box-1 button{
+    margin-top: 5%;
+}
+.box-2{
+    background-color:  hsl(220, 16%, 96%);    
+    position: relative;
+    z-index: -10;
+    margin-top: 13%;
+    padding-top: 5%;
+    padding-left: 10%; 
+    padding-bottom: 6%; 
+}
+.box-2 p:nth-child(2){
+    width: 50%;
+}
+.box-2-1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.box-2-1 p{
+    width: 88.5%;
+}
+.box-3{
+    padding:5% 10%;
+}
+.cardgroup{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;   
+    justify-content: space-between;
+}
+.card{
+    width: 24%; 
+}
+.card:nth-child(1) .card-header{
+    height: 185px;     
+}
+.card-header{
+    padding: 0;     
+    border-radius: 5px 5px 0 0;
+}
+.card-header img{
+    width: 100%;  
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.card-body{
+    font-size: 15px;
+}
+.box-4{
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(233, 26%, 24%);
+    padding: 3% 10%;
+}
+.box-4 svg{
+    margin-bottom: 40%;
+}
+.group-logo svg{
+    margin-left: 5px;  
+    fill: white;
+}
+.group-logo svg:hover{
+    fill: hsl(136, 65%, 51%);
+}
+.tab1,.tab2{
+    margin-left: 12%;
+}
+.tab1 p ,.tab2 p{
+    color: hsl(220, 16%, 96%);  
+    width: 100%;
+}
+.tab1 p:hover ,.tab2 p:hover{
+    cursor: pointer;
+    color: hsl(136, 65%, 51%);
+}
+.tab3{
+    margin-left: auto;
+    text-align: right;     
+}
+.tab3 button{
+margin-bottom: 20%;
+}
+@media (max-width:550px){
+    body{
+        background-image: url(./images/bg-intro-mobile.svg);
+       background-position: right 0% top 0%;  
+    }
+    nav{
+        padding:2%;      
+    }
+    #menu{   
+    background-image: none;    
+}
+    nav button:last-child ,#close{
+         display: none;         
+    }
+    #navtab{
+        position: absolute;
+        background-color: white;
+        top: 150%;
+        width: 90%;
+        text-align: center;
+        font-weight: 700;
+        padding: 5% 0;
+        border-radius: 10px;
+        z-index: 10;
+    }
+    #curtain{
+        position: absolute;
+        background-color: black;
+        top: 0;
+        width: 120%;
+        height: 390%;
+        opacity: 0.5;
+        display: none;
+        z-index: 5;
+    } 
+    .mock{
+        position: relative;
+        width: 92%;
+        margin-left: -5%;
+        margin-top: -32.8%;
+    }
+    .box-1,.box-2,.box-3{
+        width: 90%;
+        text-align: center;
+        margin-left: 5%;
+        padding: 10% 0;
+    }
+    h1{  
+        font-size: 40px;     
+    }
+    p{
+        font-size: 15px;
+    }
+    .box-2 h2:nth-child(1){
+        width: 50%;
+        margin: 10% auto;        
+    }
+    .box-2 p:nth-child(2){
+        width: 100%;
+    }
+    .box-2-1,.cardgroup{
+        flex-direction: column;        
+        padding-bottom: 5%;
+    }
+    .box-2-1 p{
+        width: 100%;
+    }
+.card{
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.box-4{
+    flex-direction: column;
+    text-align: center;
+    padding: 0;    
+   
+}
+.box-4 svg{
+    margin-top: 15%;
+}
+.group-logo svg{
+margin-left: 10px;
+}
+.group-logo{
+        margin-top: -45%;  
+       margin-bottom: -30%;  
+}
+.tab1,.tab2{    
+    margin: 0;
+}
+.tab3{
+    margin: 5% 0;
+    text-align: center;
+  }
+  .tab3 button{
+    margin-bottom: 10%;
+  }
+}
